@@ -1,0 +1,74 @@
+# CONFIG FILE TO SET MAIN FUNCTIONAL PARAMETERS
+# includes scan specific variables
+# makes choices what methods to run
+# controls if files are deleted in the end
+
+#Marc Biosca BIDS 1
+
+subject_list: '/pool/home/AD_Multimodal/Estudio_A4/Scripts Preproc Slicing/subject_list_3.csv'
+
+# takes as input a csv that names subjects and sessions to be run. Put in in the same directory as main_function.py. 
+
+path_base: '/pool/home/AD_Multimodal/Estudio_A4/A4_BIDS/'
+
+# absolute path to bids folder containing the files
+
+label_spatial_smoothing: False
+# Boolean, if true runs spatial smoothing
+
+label_slice_timing: True
+# Boolean, if true runs slice timing correction
+
+n_vols_to_delete: 5
+# how many vols to remove from T1
+
+name_template_t1: '/pool/home/AD_Multimodal/Estudio_A4/MNI152_T1_3.3mm_brain.nii.gz'
+
+# absolute path to the NIFTI standardspace file
+
+output_folder: 'fmri_slicetiming_output'
+# name of the output folder
+
+repetition_time: 3
+# repetition time in seconds
+
+high_pass_filter: 0.01
+# highpass filter in Hz; accepts None
+
+low_pass_filter: 0.1
+# lowpass filter in Hz; accepts None
+
+use_confounds: True
+# boolean; preferred True
+
+use_global_signal_for_confounds: False
+# boolean, if True then keeps the global signal; preferred False
+
+use_csf_and_wm_for_confounds: True
+# if true then keeps the csf and wm signal; preferred True
+
+skull_strip_method: 'hd-bet'
+# one of hd-bet, bet-nipype, bet-fslpy
+
+set_fls_module: 'fslpy'
+# one of fslpy, nipype
+
+set_registration_method: 'ants'
+# one of ants, flirt
+
+use_fnirt_for_aroma: False
+# Boolean, if True sets the t1 reg to include the fnirt template
+
+run_aroma: False
+# Boolean, if True rus Aroma
+
+bids_master: '/pool/home/AD_Multimodal/Estudio_A4/A4_BIDS/derivatives'
+# derivative folder to search for and delete files in, absolute path
+
+files_to_keep: ["desc-ts-mc-cleaned-final-reg-template.nii.gz",
+                 "desc-ts-aroma-temporal-cleaned-final-reg-template.nii.gz"]
+# list of strings that will be searched for and not deleted
+
+delete: False
+# runs the deleting function after completion of preproc, only keeping the above
+
