@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>QC Review for {{ subject }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h2, .header .reports-left, .header .revisor-id {
+            margin: 0;
+        }
+        .reports-left, .revisor-id {
+            font-size: 18px;
+            color: #555;
+        }
+        iframe {
+            width: 100%;
+            height: 900px;
+            border: none;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Added shadow for better focus */
+        }
+        form {
+            margin-top: 20px;
+        }
+        button {
+            font-size: 18px;
+            padding: 12px 24px; /* Slightly larger buttons for better clickability */
+            margin-right: 10px;
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer;
+            border: none; /* Remove border */
+        }
+        .yes {
+            background-color: green;
+            color: white;
+        }
+        .no {
+            background-color: red;
+            color: white;
+        }
+        .maybe {
+            background-color: orange;
+            color: white;
+        }
+        .exit {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+    <script>
+        function confirmExit() {
+            const userConfirmed = confirm("Do you want to save the previous decisions?");
+            if (userConfirmed) {
+                window.location.href = "/save";
+            } else {
+                window.location.href = "/exit";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Quality Control Review</h1>
+    <div class="header">
+        <h2>Subject: {{ subject }}</h2>
+        <div>
+            <div class="reports-left">Reports Left to Review: {{ reports_left }}</div>
+            <div class="revisor-id">Revisor ID: {{ revisor_id }}</div>
+        </div>
+    </div>
+    <iframe src="{{ url_for('report', subject=subject) }}"></iframe>
+    <form action="{{ url_for('qc', subject=subject) }}" method="post">
+        <button type="submit" name="decision" value="yes" class="yes">Yes</button>
+        <button type="submit" name="decision" value="no" class="no">No</button>
+        <button type="submit" name="decision" value="maybe" class="maybe">Maybe</button>
+        <button type="button" class="exit" onclick="confirmExit()">Exit</button>
+    </form>
+</body>
+</html>
