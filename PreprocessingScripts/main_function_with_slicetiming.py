@@ -29,7 +29,7 @@ def load_config(config_file):  # loads the config file
         config = yaml.safe_load(f)
     return config
 
-config = load_config('/pool/home/AD_Multimodal/Estudio_A4/Scripts Preproc Slicing/config_slicetiming (copia).yaml')
+config = load_config('/pool/home/AD_Multimodal/Estudio_A4/Scripts Preproc Slicing/config_slicetiming.yaml')
 
 @log_execution
 def resting_preprocessing_pipeline(sub_subject, ses_session):
