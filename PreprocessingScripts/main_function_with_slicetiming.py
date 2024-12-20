@@ -7,7 +7,7 @@ Date: 2023
 
 Modificacion 25.09.2024 para añadir el time slicing al proceado del rs
 
-Modified 10.09.2024 to adapt to A4 study data - Marc Biosca
+Modified by Marc Biosca on 10.10.2024 to adapt to A4 srudy data
 """
 
 
@@ -29,7 +29,7 @@ def load_config(config_file):  # loads the config file
         config = yaml.safe_load(f)
     return config
 
-config = load_config('/mnt/B468D0C568D0878E/usuarios/MarcBiosca/Scripts Raul Preproc Slice Timing/config_slicetiming.yaml')
+config = load_config('/pool/home/AD_Multimodal/Estudio_A4/Scripts Preproc Slicing/config_slicetiming (copia).yaml')
 
 @log_execution
 def resting_preprocessing_pipeline(sub_subject, ses_session):
