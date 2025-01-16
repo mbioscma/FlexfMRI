@@ -1,5 +1,7 @@
 # Author: Marc Biosca on 20.10.2014
 
+# mbioscma7@alumnes.ub.edu
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
