@@ -1,5 +1,7 @@
 # Author: Marc Biosca on 24.10.2014
 
+# mbioscma7@alumnes.ub.edu
+
 import os
 import glob
 import pandas as pd
