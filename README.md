@@ -1,7 +1,5 @@
 # FlexfMRI
 
-![BIG Logo](image.png)
-
 ## Overview
 This repository contains all the scripts and tools used in the thesis project focusing on **functional connectivity (FC)** analysis in preclinical Alzheimer's Disease (AD) using data from the A4 study. The project involves structuring, preprocessing, reviewing, and analyzing large-scale neuroimaging data to uncover early alterations in brain connectivity associated with AD progression.
 
@@ -33,3 +31,5 @@ For questions or feedback, contact Marc Biosca at mbioscma7@alumnes.ub.edu.
 
 ## Acknowledgment
 All scripts and notebooks were developed at the **Biomedical Imaging Group (BIG)** of the University of Barcelona, under the supervision of **PI: Roser Sala-Llonch**.
+
+![BIG Logo](image.png)
