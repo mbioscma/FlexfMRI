@@ -7,7 +7,7 @@ Date: 2023
 
 Modificacion 25.09.2024 para añadir el time slicing al proceado del rs
 
-Modified by Marc Biosca on 10.10.2024 to adapt to A4 srudy data
+Modified by Marc Biosca on 10.10.2024 to adapt to A4 study data
 """
 
 
