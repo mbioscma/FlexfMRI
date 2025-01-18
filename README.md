@@ -28,14 +28,14 @@ The folder [`example_inputs`](./PreprocessingScripts/example_inputs) contains fi
 ### [`QC_scripts`](./QC_scripts)  
 Includes a comprehensive Quality Control (QC) framework for visual and quantitative assessments of fMRI data. Below are the scripts, listed in the order they are applied:
 
-- [`extract_motion_voxel_data.py`](./QC_scripts/extract_motion_voxel_data.py): Extracts motion-related voxel data for quantitative QC metrics.
+- [`extract_motion_voxel_data.py`](./QC_scripts/extract_motion_voxel_data.py): Extracts voxel data for quantitative QC metrics.
 - [`qQC_threshold_study.py`](./QC_scripts/qQC_threshold_study.py): Determines thresholds for the quantitative QC based on the extracted voxel data.
 - [`generate_QC_reports.py`](./QC_scripts/generate_QC_reports.py): Uses the thresholds to generate QC reports, which will later be used for visual quality control.
 - [`qc_api_main.py`](./QC_scripts/qc_api_main.py): Runs a Flask application to allow users to review and revise the QC reports created earlier.
 - [`QC_summary.ipynb`](./QC_scripts/QC_summary.ipynb): Provides a summary of the QC process and results.
-- [`QC_reviewer_statistics.ipynb`](./QC_scripts/QC_reviewer_statistics.ipynb): Provides statistical insights into the QC process.
+- [`QC_reviewer_statistics.ipynb`](./QC_scripts/QC_reviewer_statistics.ipynb): Provides statistical insights into the visual and quantitative QC process.
 
-The folder also contains [`templates`](./QC_scripts/templates) for generating standardized QC reports and [`example_outputs`](./QC_scripts/example_outputs) showcasing report examples.
+The folder also contains [`templates`](./QC_scripts/templates) needed for using the Fask application and [`example_outputs`](./QC_scripts/example_outputs) showcasing output examples.
 
 ### [`FC_analysis`](./FC_analysis)  
 Includes notebooks ([`Exploratory_framework_FC.ipynb`](./FC_analysis/Exploratory_framework_FC.ipynb) and [`GLM_auto_FCmatrix.ipynb`](./FC_analysis/GLM_auto_FCmatrix.ipynb)) for conducting exploratory and statistical analyses of functional connectivity data.
@@ -44,7 +44,7 @@ Includes notebooks ([`Exploratory_framework_FC.ipynb`](./FC_analysis/Exploratory
 1. <a name="ref-a4"></a> Sperling, R. A., Donohue, M. C., Raman, R., Rafii, M. S., Johnson, K., Masters, C. L., van Dyck, C. H., Iwatsubo, T., Marshall, G. A., Yaari, R., Mancini, M., Holdridge, K. C., Case, M., Sims, J. R., Aisen, P. S., & A4 Study Team (2023). Trial of Solanezumab in Preclinical Alzheimer's Disease. The New England journal of medicine, 389(12), 1096–1107. https://doi.org/10.1056/NEJMoa2305032
 
 ## [Contact](#contact)
-For questions or feedback, contact Marc Biosca at [mbioscma7@alumnes.ub.edu](mailto:mbioscma7@alumnes.ub.edu).
+For questions, contact Marc Biosca at [mbioscma7@alumnes.ub.edu](mailto:mbioscma7@alumnes.ub.edu).
 
 ## [Acknowledgment](#acknowledgment)
 All scripts and notebooks were developed at the **Biomedical Imaging Group (BIG)** of the University of Barcelona, under the supervision of **PI: Roser Sala-Llonch**.
