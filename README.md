@@ -10,12 +10,6 @@ The repository is organized into the following directories:
 ### [`Data_structuring`](./Data_structuring)  
 Contains scripts like [`A4-Dataset_to_BIDS.ipynb`](./Data_structuring/A4-Dataset_to_BIDS.ipynb) for converting raw neuroimaging data into BIDS format for standardized data structuring.
 
-### [`FC_analysis`](./FC_analysis)  
-Includes notebooks ([`Exploratory_framework_FC.ipynb`](./FC_analysis/Exploratory_framework_FC.ipynb) and [`GLM_auto_FCmatrix.ipynb`](./FC_analysis/GLM_auto_FCmatrix.ipynb)) for conducting exploratory and statistical analyses of functional connectivity data.
-
-### [`ICA_analysis`](./ICA_analysis)  
-Contains scripts for ICA-based analysis of resting-state networks (RSNs). Example outputs can be found in the [`example_outputs`](./ICA_analysis/example_outputs) folder.
-
 ### [`PreprocessingScripts`](./PreprocessingScripts)  
 This folder provides the tools for a flexible preprocessing pipeline. Below are the files included in this folder and their descriptions:
 
@@ -39,6 +33,9 @@ Includes a comprehensive Quality Control (QC) framework for visual and quantitat
 
 The folder also contains [`templates`](./QC_scripts/templates) for generating standardized QC reports and [`example_outputs`](./QC_scripts/example_outputs) showcasing report examples.
 
+### [`FC_analysis`](./FC_analysis)  
+Includes notebooks ([`Exploratory_framework_FC.ipynb`](./FC_analysis/Exploratory_framework_FC.ipynb) and [`GLM_auto_FCmatrix.ipynb`](./FC_analysis/GLM_auto_FCmatrix.ipynb)) for conducting exploratory and statistical analyses of functional connectivity data.
+
 ## [Contact](#contact)
 For questions or feedback, contact Marc Biosca at [mbioscma7@alumnes.ub.edu](mailto:mbioscma7@alumnes.ub.edu).
 
@@ -46,3 +43,4 @@ For questions or feedback, contact Marc Biosca at [mbioscma7@alumnes.ub.edu](mai
 All scripts and notebooks were developed at the **Biomedical Imaging Group (BIG)** of the University of Barcelona, under the supervision of **PI: Roser Sala-Llonch**.
 
 ![BIG Logo](image.png)
+
