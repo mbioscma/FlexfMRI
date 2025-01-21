@@ -2,10 +2,10 @@
 
 # FlexfMRI
 
-## [Overview](#overview)
+## Overview
 This repository contains all the scripts and tools used in the thesis project focusing on **functional connectivity (FC)** analysis in preclinical Alzheimer's Disease (AD) using data from the A4 study [<a href="#ref-a4">1</a>]. The project involves structuring, preprocessing, reviewing, and analyzing large-scale neuroimaging data to uncover early alterations in brain connectivity associated with AD progression.
 
-## [Repository Structure](#repository-structure)
+## Repository Structure
 The repository is organized into the following directories:
 
 ### [`Data_structuring`](./Data_structuring)  
@@ -40,13 +40,13 @@ The folder also contains [`templates`](./QC_scripts/templates) needed for using 
 ### [`FC_analysis`](./FC_analysis)  
 Includes notebooks ([`Exploratory_framework_FC.ipynb`](./FC_analysis/Exploratory_framework_FC.ipynb) and [`GLM_auto_FCmatrix.ipynb`](./FC_analysis/GLM_auto_FCmatrix.ipynb)) for conducting exploratory and statistical analyses of functional connectivity data.
 
-## [References](#references)
+## References
 1. <a name="ref-a4"></a> Sperling, R. A., Donohue, M. C., Raman, R., Rafii, M. S., Johnson, K., Masters, C. L., van Dyck, C. H., Iwatsubo, T., Marshall, G. A., Yaari, R., Mancini, M., Holdridge, K. C., Case, M., Sims, J. R., Aisen, P. S., & A4 Study Team (2023). Trial of Solanezumab in Preclinical Alzheimer's Disease. The New England journal of medicine, 389(12), 1096–1107. https://doi.org/10.1056/NEJMoa2305032
 
-## [Contact](#contact)
+## Contact
 For questions, contact Marc Biosca at [mbioscma7@alumnes.ub.edu](mailto:mbioscma7@alumnes.ub.edu).
 
-## [Acknowledgment](#acknowledgment)
+## Acknowledgment
 All scripts and notebooks were developed at the **Biomedical Imaging Group (BIG)** of the University of Barcelona, under the supervision of **PI: Roser Sala-Llonch**.
 
 ![BIG Logo](image.png)
