@@ -1,6 +1,6 @@
 
 
-# [FlexfMRI](#overview)
+# FlexfMRI
 
 ## [Overview](#overview)
 This repository contains all the scripts and tools used in the thesis project focusing on **functional connectivity (FC)** analysis in preclinical Alzheimer's Disease (AD) using data from the A4 study [<a href="#ref-a4">1</a>]. The project involves structuring, preprocessing, reviewing, and analyzing large-scale neuroimaging data to uncover early alterations in brain connectivity associated with AD progression.
